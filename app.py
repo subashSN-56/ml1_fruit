@@ -11,7 +11,7 @@ st.set_page_config(page_title="Pomegranate Disease Detection", layout="centered"
 
 # Load custom CSS (optional)
 try:
-    with open("style.css") as f:
+    with open("assets/style.css") as f:
         st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 except FileNotFoundError:
     st.warning("style.css not found. Using default styling.")
